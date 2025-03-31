@@ -15,6 +15,7 @@ This project analyzes sales data from a UK-based non-store online retail company
 - [Repository Contents](#repository-contents)
 - [Tools Used](#tools-used)
 - [Conclusion](#conclusion)
+- [SQL Code](#sql-codes)
 
 ## Business Challenge
 The company primarily sells unique all-occasion gifts, with many customers being wholesalers. Understanding sales trends, customer behavior, and product performance is crucial for optimizing stock levels, marketing efforts, and overall revenue.
@@ -65,6 +66,8 @@ The following dashboards provide a comprehensive view of the analysis:
 ---
 This analysis provides actionable insights into seasonal trends, customer behavior, and top-performing products. Businesses can leverage these findings to optimize marketing campaigns, inventory management, and customer engagement strategies.
 For the full project and code, visit the GitHub Repository.
+
+## SQL Codes
 
 ```sql
 -- CREATING A NEW DATABASE CALLED SALES
