@@ -1,8 +1,24 @@
 # UK E-Commerce Sales Analysis
 ## Overview
 This project analyzes sales data from a UK-based non-store online retail company, focusing on customer behavior, revenue trends, and product performance. By examining transactions from December 1, 2010, to December 9, 2011, we uncover valuable business insights that can inform strategic decisions.
-Business Challenge
+
+## Table of Contents
+- [Overview](#overview)
+- [Business Challenge](#business-challenge)
+- [Key Insights](#key-insights)
+  - [Seasonal Sales Trends](#1-seasonal-sales-trends)
+  - [Revenue by Country](#2-revenue-by-country)
+  - [Order Volume by Hour](#3-order-volume-by-hour)
+  - [Top-Selling Products](#4-top-selling-products)
+  - [Customer & Geographical Insights](#5-customer--geographical-insights)
+- [Visuals](#visuals)
+- [Repository Contents](#repository-contents)
+- [Tools Used](#tools-used)
+- [Conclusion](#conclusion)
+
+## Business Challenge
 The company primarily sells unique all-occasion gifts, with many customers being wholesalers. Understanding sales trends, customer behavior, and product performance is crucial for optimizing stock levels, marketing efforts, and overall revenue.
+
 ## Key Insights
 ### 1. Seasonal Sales Trends
 ---
