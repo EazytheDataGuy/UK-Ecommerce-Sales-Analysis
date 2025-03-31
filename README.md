@@ -99,43 +99,21 @@ SHOW VARIABLES LIKE 'secure_file_priv'; -- TO SEE THE DIRECTORY FOR SAVING MYSQL
 
 -- LOADING ONLINE STORE2 DATASET INTO SALES TABLE USING MYSL DIRECTORY
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Online store2.csv' 
-INTO TABLE sales
+INTO TABLE sales3
 FIELDS TERMINATED BY ','
 IGNORE 1 LINES; -- IT DIDN'T WORK
-
--- ADDING ENCLOSED AND REPLACING VALUE COLUMNS CONTAINING EMPTY FIELD TO NULL
-LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Online store2_UTF8.csv'
-INTO TABLE sales
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'  -- This ensures quoted text fields are treated correctly
-IGNORE 1 LINES
-(InvoiceNo, StockCode, Description, @Quantity, @InvoiceDate, @UnitPrice, @CustomerID, Country)
-SET 
-    Quantity = NULLIF(@Quantity, ''), 
-    InvoiceDate = STR_TO_DATE(@InvoiceDate, '%Y-%m-%d %H:%i:%s'),
-    UnitPrice = NULLIF(@UnitPrice, ''),
-    CustomerID = NULLIF(@CustomerID, ''); -- IT WORKED, 541,909 ROWS WERE IMPORTED INTO SALES TABLE
-
--- TRY TO TROUBLESHOOT WHERE THE ACTUAL PROBLEM CAME FROM, 
--- BY CREATING A NEW TABLE LIKE THE SALES TABLE THEN ADDING JUST THE ENCLOSURE(ENCLOSED BY '"')
--- WHEN LOADING THE DATASET INTO THE NEWLY CREATED SALES2 TABLE
-CREATE TABLE sales2
-LIKE SALES;
-
-SELECT *
-FROM sales3;
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Online store2_UTF8.csv' 
 INTO TABLE sales3
 FIELDS TERMINATED BY ','
-ENCLOSED BY '"' 
+ENCLOSED BY '"' -- ENCLOSED BY DOUBLE QUOTE
 IGNORE 1 LINES; -- IT WORKED 541,909 ROWS WERE IMPORTED INTO SALES2 TABLE
 
--- N0W WE WILL be working with THE SALES 2 TABLE
+-- N0W WE WILL be working with THE SALES3 TABLE
 
 -- viewing the new table
 SELECT * 
-FROM sales3;
+FROM SALES3;
 
 -- lets try cleaning the columns. While scrutinizing the dataset on excel(we filled the columns with blank fields, so there's no blank or null fields)
 
