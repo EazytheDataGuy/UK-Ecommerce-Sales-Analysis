@@ -20,6 +20,8 @@ This project analyzes sales data from a UK-based non-store online retail company
 ## Business Challenge
 The company primarily sells unique all-occasion gifts, with many customers being wholesalers. Understanding sales trends, customer behavior, and product performance is crucial for optimizing stock levels, marketing efforts, and overall revenue.
 
+![Sales review](https://github.com/user-attachments/assets/b9cc2278-dc4a-4539-8e3d-b620fbed8305)
+
 ## Key Insights
 ### 1. Seasonal Sales Trends
 ---
